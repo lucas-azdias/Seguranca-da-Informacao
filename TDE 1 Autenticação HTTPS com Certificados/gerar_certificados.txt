@@ -1,0 +1,3 @@
+openssl req -newkey rsa:2048 -days 365 -nodes -keyout client.key -out client.csr -subj "/C=BR/ST=Parana/L=Curitiba/O=TDE/CN=Lucas Azevedo Dias"
+
+openssl x509 -outform der -in certCA.pem -out certCA.crt
